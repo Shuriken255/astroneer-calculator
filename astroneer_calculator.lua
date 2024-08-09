@@ -11,6 +11,7 @@
 
 
 
+-- A local table that stores information about (almost) all items in the game
 local items = {};
 
 
@@ -950,6 +951,8 @@ items["Large Shuttle"] = {
 
 
 
+-- Generates a sentence that is an instruction on how to obtain a required item.
+-- Has a lot of formating, checking for plural items and properly edits them.
 local function formatAction(item, amount, machine, planets)
 	local units;
 	if (amount == 1) then
@@ -1017,6 +1020,7 @@ end
 
 
 
+-- The main module that is going to be returned
 local calculator = {};
 
 function calculator.calculate(input)
