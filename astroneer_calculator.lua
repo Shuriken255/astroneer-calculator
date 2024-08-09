@@ -212,7 +212,8 @@ items["EXO Chip"] = {
 items["Backpack"] = {};
 items["Small Printer"] = {
 	recipe = {"Compound"},
-	machine = "Backpack"
+	machine = "Backpack",
+	power_consumption = 1
 };
 
 items["Packager"] = {
@@ -252,7 +253,8 @@ items["Oxygen Tank"] = {
 items["Portable Oxygenator"] = {
 	recipe = {"Nanocarbon Alloy"},
 	machine = "Backpack",
-	bytecost = 10000
+	bytecost = 10000,
+	power_consumption = 1
 };
 
 items["Small Canister"] = {
@@ -284,7 +286,8 @@ items["Floodlight"] = {
 
 items["Small Generator"] = {
 	recipe = {"Compound"},
-	machine = "Backpack"
+	machine = "Backpack",
+	power_generation = 2
 };
 
 items["Power Cells"] = {
@@ -296,67 +299,79 @@ items["Power Cells"] = {
 items["Small Solar Panel"] = {
 	recipe = {"Copper"},
 	machine = "Backpack",
-	bytecost = 300
+	bytecost = 300,
+	power_generation = 1
 };
 
 items["Small Wind Turbine"] = {
 	recipe = {"Ceramic"},
 	machine = "Backpack",
-	bytecost = 300
+	bytecost = 300,
+	power_generation = 1.5
 };
 
 items["Small Battery"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 2000
+	bytecost = 2000,
+	power_storage = 32,
+	power_storage_output = 1
 };
 
 items["Boost Mod"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.75
 };
 
 items["Wide Mod"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.5
 };
 
 items["Narrow Mod"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.5
 };
 
 items["Inhibitor Mod"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.2
 };
 
 items["Alignment Mod"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.5
 };
 
 items["Drill Mod 1"] = {
 	recipe = {"Ceramic"},
 	machine = "Backpack",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 0.25
 };
 
 items["Drill Mod 2"] = {
 	recipe = {"Tungsten Carbide"},
 	machine = "Backpack",
-	bytecost = 2500
+	bytecost = 2500,
+	power_consumption = 0.5
 };
 
 items["Drill Mod 3"] = {
 	recipe = {"Diamond"},
 	machine = "Backpack",
-	bytecost = 3750
+	bytecost = 3750,
+	power_consumption = 0.75
 };
 
 items["Dynamite"] = {
@@ -392,13 +407,15 @@ items["Holographic Figurine"] = {
 items["Terrain Analyzer"] = {
 	recipe = {"Zinc"},
 	machine = "Backpack",
-	bytecost = 2000
+	bytecost = 2000,
+	power_consumption = 0.5
 };
 
 items["Probe Scanner"] = {
 	recipe = {"Steel"},
 	machine = "Backpack",
-	bytecost = 4000
+	bytecost = 4000,
+	power_consumption = 0.3
 };
 
 items["Solid-Fuel Jump Jet"] = {
@@ -415,7 +432,8 @@ items["Hydrazine Jet Pack"] = {
 
 items["Hoverboard"] = {
 	recipe = {"EXO Chip"},
-	machine = "Backpack"
+	machine = "Backpack",
+	power_consumption = 1
 };
 
 
@@ -423,7 +441,8 @@ items["Hoverboard"] = {
 -- Small printer
 items["Medium Printer"] = {
 	recipe = {"Compound", "Compound"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	power_consumption = 2
 };
 
 items["Oxygenator"] = {
@@ -435,19 +454,22 @@ items["Oxygenator"] = {
 items["Medium Shredder"] = {
 	recipe = {"Iron", "Iron"},
 	machine = "Small Printer",
-	bytecost = 1250
+	bytecost = 1250,
+	power_consumption = 5
 };
 
 items["Field Shelter"] = {
 	recipe = {"Graphene", "Silicone"},
 	machine = "Small Printer",
-	bytecost = 8000
+	bytecost = 8000,
+	power_generation = 0.5
 };
 
 items["Auto Arm"] = {
 	recipe = {"Graphite", "Aluminum"},
 	machine = "Small Printer",
-	bytecost = 1500
+	bytecost = 1500,
+	power_consumption = 1
 };
 
 items["Medium Resource Canister"] = {
@@ -531,31 +553,37 @@ items["Splitter"] = {
 items["Medium Generator"] = {
 	recipe = {"Tungsten", "Aluminum"},
 	machine = "Small Printer",
-	bytecost = 2000
+	bytecost = 2000,
+	power_generation = 9
 };
 
 items["Medium Solar Panel"] = {
 	recipe = {"Glass", "Copper"},
 	machine = "Small Printer",
-	bytecost = 2000
+	bytecost = 2000,
+	power_generation = 4
 };
 
 items["Medium Wind Turbine"] = {
 	recipe = {"Ceramic", "Aluminum"},
 	machine = "Small Printer",
-	bytecost = 2500
+	bytecost = 2500,
+	power_generation = 5
 };
 
 items["Medium Battery"] = {
 	recipe = {"Zinc", "Lithium"},
 	machine = "Small Printer",
-	bytecost = 3750
+	bytecost = 3750,
+	power_storage = 512,
+	power_storage_output = 5
 };
 
 items["RTG"] = {
 	recipe = {"Lithium", "Nanocarbon Alloy"},
 	machine = "Small Printer",
-	bytecost = 12500
+	bytecost = 12500,
+	power_generation = 4
 };
 
 items["Medium Platform A"] = {
@@ -636,25 +664,29 @@ items["Winch"] = {
 items["Paver"] = {
 	recipe = {"Silicone", "Aluminum Alloy"},
 	machine = "Small Printer",
-	bytecost = 5000
+	bytecost = 5000,
+	power_consumption = 1
 };
 
 items["Drill Strength 1"] = {
 	recipe = {"Ceramic", "Tungsten Carbide"},
 	machine = "Small Printer",
-	bytecost = 2500
+	bytecost = 2500,
+	power_consumption = 1
 };
 
 items["Drill Strength 2"] = {
 	recipe = {"Tungsten Carbide", "Titanium Alloy"},
 	machine = "Small Printer",
-	bytecost = 5000
+	bytecost = 5000,
+	power_consumption = 1
 };
 
 items["Drill Strength 3"] = {
 	recipe = {"Titanium Alloy", "Diamond"},
 	machine = "Small Printer",
-	bytecost = 7500
+	bytecost = 7500,
+	power_consumption = 3
 };
 
 items["Solid-Fuel Thruster"] = {
@@ -697,36 +729,42 @@ items["Fault Finder"] = {
 -- Medium printer
 items["Large Printer"] = {
 	recipe = {"Compound", "Compound", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	power_consumption = 5
 };
 
 items["Smelting Furnace"] = {
 	recipe = {"Resin", "Resin", "Compound"},
 	machine = "Medium Printer",
-	bytecost = 250
+	bytecost = 250,
+	power_consumption = 5
 };
 
 items["Soil Centrifuge"] = {
 	recipe = {"Aluminum", "Compound", "Compound"},
 	machine = "Medium Printer",
-	bytecost = 750
+	bytecost = 750,
+	power_consumption = 6
 };
 
 items["Chemistry Lab"] = {
 	recipe = {"Tungsten", "Glass", "Ceramic"},
 	machine = "Medium Printer",
-	bytecost = 1600
+	bytecost = 1600,
+	power_consumption = 10
 };
 
 items["Atmospheric Condenser"] = {
 	recipe = {"Iron", "Glass", "Plastic"},
 	machine = "Medium Printer",
-	bytecost = 2200
+	bytecost = 2200,
+	power_consumption = 20
 };
 
 items["Research Chamber"] = {
 	recipe = {"Resin", "Compound", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	power_consumption = 2
 };
 
 items["EXO Request Platform"] = {
@@ -743,19 +781,22 @@ items["Trade Platform"] = {
 items["Large Shredder"] = {
 	recipe = {"Iron", "Tungsten Carbide", "EXO Chip"},
 	machine = "Medium Printer",
-	bytecost = 2500
+	bytecost = 2500,
+	power_consumption = 7.5
 };
 
 items["Large Solar Panel"] = {
 	recipe = {"Aluminum Alloy", "Glass", "Copper"},
 	machine = "Medium Printer",
-	bytecost = 4000
+	bytecost = 4000,
+	power_generation = 9
 };
 
 items["Large Wind Turbine"] = {
 	recipe = {"Aluminum Alloy", "Glass", "Ceramic"},
 	machine = "Medium Printer",
-	bytecost = 3500
+	bytecost = 3500,
+	power_generation = 10
 };
 
 items["Large Platform A"] = {
@@ -838,7 +879,8 @@ items["Large Rover Seat"] = {
 items["Medium Rover"] = {
 	recipe = {"Rubber", "Plastic", "Plastic"},
 	machine = "Medium Printer",
-	bytecost = 3750
+	bytecost = 3750,
+	power_consumption = 0.5
 };
 
 items["VTOL"] = {
@@ -867,13 +909,15 @@ items["Large Rover Seat B"] = {
 items["Rail Engine"] = {
 	recipe = {"Resin", "Aluminum", "Copper"},
 	machine = "Medium Printer",
-	bytecost = 1000
+	bytecost = 1000,
+	power_consumption = 3
 };
 
 items["Rail Car"] = {
 	recipe = {"Resin", "Resin", "Aluminum"},
 	machine = "Medium Printer",
-	bytecost = 1500
+	bytecost = 1500,
+	power_consumption = 1
 };
 
 items["Recreational Sphere"] = {
@@ -887,31 +931,36 @@ items["Recreational Sphere"] = {
 -- Large printer
 items["Shelter"] = {
 	recipe = {"Silicone", "Silicone", "Plastic", "Plastic"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	power_generation = 1
 };
 
 items["Auto Extractor"] = {
 	recipe = {"Tungsten Carbide", "Rubber", "Steel", "EXO Chip"},
 	machine = "Large Printer",
-	bytecost = 7500
+	bytecost = 7500,
+	power_consumption = 8
 };
 
 items["Extra Large Shredder"] = {
 	recipe = {"Steel", "Tungsten Carbide", "EXO Chip", "EXO Chip"},
 	machine = "Large Printer",
-	bytecost = 5000
+	bytecost = 5000,
+	power_consumption = 10
 };
 
 items["Solar Array"] = {
 	recipe = {"Graphene", "Aluminum Alloy", "Glass", "Copper"},
 	machine = "Large Printer",
-	bytecost = 6000
+	bytecost = 6000,
+	power_generation = 14
 };
 
 items["XL Wind Turbine"] = {
 	recipe = {"Graphene", "Aluminum Alloy", "Ceramic", "Iron"},
 	machine = "Large Printer",
-	bytecost = 4500
+	bytecost = 4500,
+	power_generation = 17
 };
 
 items["Medium Sensor Arch"] = {
@@ -1012,7 +1061,8 @@ items["Extra Large Resource Canister"] = {
 items["Large Rover"] = {
 	recipe = {"Rubber", "Aluminum Alloy", "EXO Chip", "EXO Chip"},
 	machine = "Large Printer",
-	bytecost = 5000
+	bytecost = 5000,
+	power_consumption = 1
 };
 
 items["Landing Pad"] = {
