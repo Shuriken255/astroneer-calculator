@@ -1111,15 +1111,4 @@ end
 
 
 
---[[ a test
-local f = io.open("test.txt", "r");
-if (f) then
-	local text = f:read("*all");
-	f:close();
-	
-	print(calculator.calculate(text));
-end]]--
-
-
-
 return calculator;
