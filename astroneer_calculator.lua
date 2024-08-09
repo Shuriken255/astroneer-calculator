@@ -17,6 +17,8 @@ local items = {};
 
 
 -- Natural resources
+items["Soil"] = {};
+
 items["Organic"] = {};
 items["Compound"] = {};
 items["Resin"] = {};
@@ -220,9 +222,15 @@ items["Packager"] = {
 };
 
 items["Leveling Block"] = {
-	recipe = {"Small Canister"},
+	recipe = {"Soil"},
 	machine = "Backpack",
 	bytecost = 500
+};
+
+items["Tapper"] = {
+	recipe = {"Aluminum"},
+	machine = "Backpack",
+	1000
 };
 
 items["Tether"] = {
@@ -420,107 +428,134 @@ items["Medium Printer"] = {
 
 items["Oxygenator"] = {
 	recipe = {"Ceramic", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1800
 };
 
 items["Medium Shredder"] = {
 	recipe = {"Iron", "Iron"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1250
 };
 
 items["Field Shelter"] = {
 	recipe = {"Graphene", "Silicone"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 8000
 };
 
 items["Auto Arm"] = {
 	recipe = {"Graphite", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1500
 };
 
 items["Medium Resource Canister"] = {
 	recipe = {"Glass", "Plastic"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2000,
 };
 
 items["Medium Fluid & Soil Canister"] = {
 	recipe = {"Glass", "Plastic"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2500
 };
 
 items["Medium Gas Canister"] = {
 	recipe = {"Glass", "Silicone"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 4000
 };
 
 items["Power Sensor"] = {
 	recipe = {"Copper", "Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 500
 };
 
 items["Storage Sensor"] = {
 	recipe = {"Quartz", "Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 750
 };
 
 items["Battery Sensor"] = {
 	recipe = {"Graphite", "Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 750
 };
 
 items["Button Repeater"] = {
 	recipe = {"Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 300
+};
+
+items["Proximity Repeater"] = {
+	recipe = {"Zinc"},
+	machine = "Small Printer",
+	bytecost = 700
 };
 
 items["Delay Repeater"] = {
 	recipe = {"Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1000
 };
 
 items["Count Repeater"] = {
 	recipe = {"Zinc"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1000
 };
 
-items["Extenders"] = {
+items["Power Extenders"] = {
 	recipe = {"Copper"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 500
 };
 
 items["Power Switch"] = {
 	recipe = {"Copper"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 750
 };
 
 items["Splitter"] = {
 	recipe = {"Graphite", "Copper"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1000
 };
 
 items["Medium Generator"] = {
 	recipe = {"Tungsten", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2000
 };
 
 items["Medium Solar Panel"] = {
 	recipe = {"Glass", "Copper"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2000
 };
 
 items["Medium Wind Turbine"] = {
 	recipe = {"Ceramic", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2500
 };
 
 items["Medium Battery"] = {
 	recipe = {"Zinc", "Lithium"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 3750
 };
 
 items["RTG"] = {
 	recipe = {"Lithium", "Nanocarbon Alloy"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 12500
 };
 
 items["Medium Platform A"] = {
@@ -530,22 +565,26 @@ items["Medium Platform A"] = {
 
 items["Medium Platform B"] = {
 	recipe = {"Resin", "Resin"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 250
 };
 
 items["Medium Platform C"] = {
 	recipe = {"Resin"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 400
 };
 
 items["Tall Platform"] = {
 	recipe = {"Ceramic"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 750
 };
 
 items["Medium T-Platform"] = {
 	recipe = {"Resin", "Resin"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 400
 };
 
 items["Medium Storage"] = {
@@ -555,12 +594,14 @@ items["Medium Storage"] = {
 
 items["Medium Storage Silo"] = {
 	recipe = {"Titanium", "Titanium"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 3000
 };
 
 items["Tall Storage"] = {
 	recipe = {"Ceramic"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 400
 };
 
 items["Rover Seat"] = {
@@ -570,105 +611,83 @@ items["Rover Seat"] = {
 
 items["Tractor"] = {
 	recipe = {"Aluminum", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1000
 };
 
 items["Trailer"] = {
 	recipe = {"Aluminum", "Compound"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 1500
 };
 
 items["Medium Buggy Horn"] = {
 	recipe = {"Rubber", "Plastic"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2000
 };
 
 items["Winch"] = {
 	recipe = {"Rubber", "EXO Chip"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 3750
 };
 
 items["Paver"] = {
 	recipe = {"Silicone", "Aluminum Alloy"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 5000
 };
 
 items["Drill Strength 1"] = {
 	recipe = {"Ceramic", "Tungsten Carbide"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 2500
 };
 
 items["Drill Strength 2"] = {
 	recipe = {"Tungsten Carbide", "Titanium Alloy"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 5000
 };
 
 items["Drill Strength 3"] = {
 	recipe = {"Titanium Alloy", "Diamond"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 7500
 };
 
 items["Solid-Fuel Thruster"] = {
 	recipe = {"Ammonium", "Aluminum"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 500
 };
 
 items["Hydrazine Thruster"] = {
 	recipe = {"Steel", "EXO Chip"},
-	machine = "Small Printer"
+	machine = "Small Printer",
+	bytecost = 3750
 };
 
-items["Packager"] = {
-	recipe = {"Graphite"},
-	machine = "Small Printer"
+items["Rail Post Bundle"] = {
+	recipe = {"Resin", "Aluminum"},
+	machine = "Small Printer",
+	bytecost = 750
 };
 
-items["Small Canister"] = {
-	recipe = {"Resin"},
-	machine = "Small Printer"
+items["Tall Rail Post Bundle"] = {
+	recipe = {"Resin", "Alluminum"},
+	machine = "Small Printer",
+	bytecost = 750
 };
 
-items["Dynamite"] = {
-	recipe = {"Explosive Powder"},
-	machine = "Small Printer"
+items["Rail Junction Bundle"] = {
+	recipe = {"Alluminum", "Alluminum"},
+	machine = "Small Printer",
+	bytecost = 1000
 };
 
-items["Fireworks"] = {
-	recipe = {"Explosive Powder"},
-	machine = "Small Printer"
-};
-
-items["Worklight"] = {
-	recipe = {"Copper"},
-	machine = "Small Printer"
-};
-
-items["Floodlight"] = {
-	recipe = {"Tungsten"},
-	machine = "Small Printer"
-};
-
-items["Automaton 001"] = {
-	recipe = {"Scrap"},
-	machine = "Small Printer"
-};
-
-items["Automaton 002"] = {
-	recipe = {"Scrap"},
-	machine = "Small Printer"
-};
-
-items["Cubic Object"] = {
-	recipe = {"Carbon", "Scrap"},
-	machine = "Small Printer"
-};
-
-items["Stellar Object"] = {
-	recipe = {"Glass", "Scrap"},
-	machine = "Small Printer"
-};
-
-items["Cosmic Bauble"] = {
+items["Fault Finder"] = {
 	recipe = {"Astronium", "Scrap"},
 	machine = "Small Printer"
 };
@@ -683,22 +702,26 @@ items["Large Printer"] = {
 
 items["Smelting Furnace"] = {
 	recipe = {"Resin", "Resin", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 250
 };
 
 items["Soil Centrifuge"] = {
 	recipe = {"Aluminum", "Compound", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 750
 };
 
 items["Chemistry Lab"] = {
 	recipe = {"Tungsten", "Glass", "Ceramic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 1600
 };
 
 items["Atmospheric Condenser"] = {
 	recipe = {"Iron", "Glass", "Plastic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2200
 };
 
 items["Research Chamber"] = {
@@ -713,22 +736,26 @@ items["EXO Request Platform"] = {
 
 items["Trade Platform"] = {
 	recipe = {"EXO Chip", "Tungsten", "Iron"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2500
 };
 
 items["Large Shredder"] = {
 	recipe = {"Iron", "Tungsten Carbide", "EXO Chip"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2500
 };
 
 items["Large Solar Panel"] = {
 	recipe = {"Aluminum Alloy", "Glass", "Copper"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 4000
 };
 
 items["Large Wind Turbine"] = {
 	recipe = {"Aluminum Alloy", "Glass", "Ceramic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 3500
 };
 
 items["Large Platform A"] = {
@@ -738,77 +765,80 @@ items["Large Platform A"] = {
 
 items["Large Platform B"] = {
 	recipe = {"Resin", "Resin", "Resin"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 500
 };
 
 items["Large Platform C"] = {
 	recipe = {"Resin", "Iron", "Ceramic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 1000
 };
 
 items["Large T-Platform"] = {
 	recipe = {"Aluminum", "Aluminum", "Resin"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 1000
 };
 
 items["Large Curved Platform"] = {
 	recipe = {"Ceramic", "Ceramic", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 1000
 };
 
 items["Large Extended Platform"] = {
 	recipe = {"Resin", "Resin"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 500
 };
 
 items["Large Resource Canister"] = {
 	recipe = {"Glass", "Titanium", "Nanocarbon Alloy"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 5000,
 };
 
 items["Large Storage"] = {
 	recipe = {"Ceramic", "Ceramic", "Ceramic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2000
 };
 
 items["Large Storage Silo A"] = {
 	recipe = {"Aluminum", "Aluminum", "Steel"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 5000
 };
 
 items["Large Storage Silo B"] = {
 	recipe = {"Steel", "Steel", "Steel"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 7500
 };
 
 items["Large Active Storage"] = {
 	recipe = {"Zinc", "Aluminum", "Resin"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2000
 };
 
 items["Buggy"] = {
 	recipe = {"Aluminum", "Compound"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 1500
 };
 
 items["Large Rover Seat"] = {
 	recipe = {"Compound", "Plastic", "Plastic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 2000
 };
 
 items["Medium Rover"] = {
 	recipe = {"Rubber", "Plastic", "Plastic"},
-	machine = "Medium Printer"
-};
-
-items["Crane"] = {
-	recipe = {"Titanium", "Silicone", "Steel"},
-	machine = "Medium Printer"
-};
-
-items["Large Fog Horn"] = {
-	recipe = {"Steel", "Rubber", "Plastic"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 3750
 };
 
 items["VTOL"] = {
@@ -816,9 +846,40 @@ items["VTOL"] = {
 	machine = "Medium Printer"
 };
 
+items["Crane"] = {
+	recipe = {"Titanium", "Silicone", "Steel"},
+	machine = "Medium Printer",
+	bytecost = 4500
+};
+
+items["Large Fog Horn"] = {
+	recipe = {"Steel", "Rubber", "Plastic"},
+	machine = "Medium Printer",
+	bytecost = 4000
+};
+
+items["Large Rover Seat B"] = {
+	recipe = {"Compound", "Plastic", "Plastic"},
+	machine = "Medium Printer",
+	bytecost = 2000
+};
+
+items["Rail Engine"] = {
+	recipe = {"Resin", "Aluminum", "Copper"},
+	machine = "Medium Printer",
+	bytecost = 1000
+};
+
+items["Rail Car"] = {
+	recipe = {"Resin", "Resin", "Aluminum"},
+	machine = "Medium Printer",
+	bytecost = 1500
+};
+
 items["Recreational Sphere"] = {
 	recipe = {"Rubber", "Aluminum Alloy"},
-	machine = "Medium Printer"
+	machine = "Medium Printer",
+	bytecost = 4500
 };
 
 
@@ -831,122 +892,157 @@ items["Shelter"] = {
 
 items["Auto Extractor"] = {
 	recipe = {"Tungsten Carbide", "Rubber", "Steel", "EXO Chip"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 7500
 };
 
 items["Extra Large Shredder"] = {
 	recipe = {"Steel", "Tungsten Carbide", "EXO Chip", "EXO Chip"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 5000
 };
 
 items["Solar Array"] = {
 	recipe = {"Graphene", "Aluminum Alloy", "Glass", "Copper"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 6000
 };
 
 items["XL Wind Turbine"] = {
 	recipe = {"Graphene", "Aluminum Alloy", "Ceramic", "Iron"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 4500
 };
 
 items["Medium Sensor Arch"] = {
 	recipe = {"Zinc", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["XL Sensor Arch"] = {
 	recipe = {"Zinc", "Zinc", "Quartz", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 1000
 };
 
 items["XL Sensor Canopy"] = {
 	recipe = {"Zinc", "Zinc", "Quartz", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 1000
 };
 
 items["Large Sensor Ring"] = {
 	recipe = {"Zinc", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 500
 };
 
 items["Large Sensor Hoop A"] = {
 	recipe = {"Zinc", "Quartz", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["Large Sensor Hoop B"] = {
 	recipe = {"Zinc", "Zinc", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["XL Sensor Hoop A"] = {
 	recipe = {"Zinc", "Zinc", "Quartz", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["XL Sensor Hoop B"] = {
 	recipe = {"Zinc", "Zinc", "Zinc", "Quartz"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 1000
 };
 
 items["Extra Large Platform A"] = {
 	recipe = {"Ceramic", "Ceramic", "Iron", "Iron"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 2000
 };
 
 items["Extra Large Platform B"] = {
 	recipe = {"Iron", "Iron", "Iron", "Iron"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 3000
 };
 
 items["Extra Large Platform C"] = {
 	recipe = {"Resin", "Resin", "Iron", "Iron"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 2000
 };
 
 items["Extra Large Curved Platform"] = {
 	recipe = {"Ceramic", "Ceramic", "Compound", "Compound"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 2000
 };
 
 items["XL Extended Platform"] = {
 	recipe = {"Resin", "Resin", "Resin"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["Figurine Platform"] = {
 	recipe = {"Iron", "Iron", "Iron", "Iron"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 3000
 };
 
 items["Extra Large Storage"] = {
 	recipe = {"Ceramic", "Ceramic", "Iron", "Iron"},
+	machine = "Large Printer",
+	bytecost = 2000
+};
+
+items["Extra Large Resource Canister"] = {
+	recipe = {"Diamond", "EXO Chip", "Nanocarbon Alloy", "Nanocarbon Alloy"},
 	machine = "Large Printer"
 };
 
 items["Large Rover"] = {
 	recipe = {"Rubber", "Aluminum Alloy", "EXO Chip", "EXO Chip"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 5000
 };
 
 items["Landing Pad"] = {
 	recipe = {"Ceramic", "Ceramic", "Aluminum"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 750
 };
 
 items["Small Shuttle"] = {
 	recipe = {"Aluminum", "Aluminum"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 1500
 };
 
 items["Medium Shuttle"] = {
 	recipe = {"Ceramic", "Ceramic", "Aluminum Alloy"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 3750
 };
 
 items["Large Shuttle"] = {
 	recipe = {"Ceramic", "Titanium Alloy", "EXO Chip", "EXO Chip"},
-	machine = "Large Printer"
+	machine = "Large Printer",
+	bytecost = 5000
+};
+
+items["Rail Station"] = {
+	recipe = {"Titanium", "Titanium", "Copper", "Quartz"},
+	machine = "Large Printer",
+	bytecost = 2500
 };
 
 
