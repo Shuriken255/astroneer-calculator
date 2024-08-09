@@ -1111,12 +1111,4 @@ end
 
 
 
--- Returns a table that contains information about the item.
--- Changing the return table will modify item information in the module!
-function calculator.getItemInfo(name)
-	local item = items[name];
-end
-
-
-
 return calculator;
